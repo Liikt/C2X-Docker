@@ -4,7 +4,17 @@ This is horribly hacky and I know that. If you know Docker feel free to improve
 the Dockerfile and make use of builder images and stuff. For now this should
 work :tm:
 
+Use at own risk.
+
+Currently this only works on Linux which uses the X server. Theoretically this
+also works for MacOS [0] and Windows [1].
+
 This was build for the C2X Labs of TKN at TU Berlin.
+
+[0] https://medium.com/@mr.sahputra/running-qt-application-using-docker-on-macos-x-ad2e9d34532a
+
+[1] https://dev.to/darksmile92/run-gui-app-in-linux-docker-container-on-windows-host-4kde
+
 
 ## Noteworthy Findings
 
