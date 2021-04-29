@@ -52,4 +52,8 @@ RUN make -j`nproc`
 ENV PATH="/root/sumo/bin:${PATH}"
 
 WORKDIR /root/project
+RUN apt install -y gdb gdbserver
+RUN wget -O ~/.gdbinit-gef.py -q http://gef.blah.cat/py
+RUN echo source ~/.gdbinit-gef.py >> ~/.gdbinit
+ENV LC_ALL="en_US.UTF-8"
 ENTRYPOINT bash
